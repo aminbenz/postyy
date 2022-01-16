@@ -1,0 +1,20 @@
+.no-posts {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 4rem;
+  text-transform: capitalize;
+  max-width: 35rem;
+  .title {
+    font-size: 2rem;
+  }
+  .caption {
+    color: var(--color-dark);
+    font-size: 17px;
+    font-style: italic;
+    font-variant-caps: titling-caps;
+    font-weight: 400;
+    margin: 1rem 0 2rem 0;
+  }
+  .btn {
+  }
+}
+

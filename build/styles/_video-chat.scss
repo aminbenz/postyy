@@ -1,0 +1,25 @@
+.video-chat {
+  height: 100vh;
+  width: 100%;
+  grid-template-columns: 1fr;
+  .media {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    gap: 30px;
+  }
+  .chat {
+    height: 100%;
+    width: 100%;
+    .chat-box-popup {
+      position: inherit;
+      border: none;
+      border-radius: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .conversation-content {
+      height: 100%;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.btn {
+  padding: 15px 40px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  border-radius: 1px;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.btn-primary {
+  color: black;
+  background-color: var(--primary-clr);
+  border: 1px solid var(--primary-clr) !important;
+
+  &:hover {
+    color: var(--primary-clr);
+    background-color: black !important;
+    border: 1px solid var(--primary-clr);
+  }
+}
+
+button.btn.btn-primary:disabled {
+  border: 1px solid #999999 !important;
+  background-color: #cccccc !important;
+  color: #666666 !important;
+}

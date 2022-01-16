@@ -1,0 +1,58 @@
+.alert-card.active {
+  display: grid;
+}
+.alert-card {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.767);
+  display: grid;
+  place-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: none;
+  &-container {
+    padding: 1.3rem;
+    max-width: 24rem;
+    max-height: 26rem;
+    width: 95%;
+    background: var(--color-white);
+    color: var(--color-dark);
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    p a {
+      color: inherit;
+      text-decoration: underline;
+      &:hover {
+        color: var(--color-primary);
+      }
+    }
+    svg {
+      font-size: 40px;
+    }
+
+    .caption {
+      text-align: center;
+      font-size: 15px;
+      text-transform: capitalize;
+    }
+    .btns {
+      margin-top: 20px;
+      display: flex;
+      gap: 20px;
+      justify-content: space-evenly;
+      button {
+        font-size: 0.8rem;
+        padding: 10px 25px;
+      }
+    }
+  }
+}

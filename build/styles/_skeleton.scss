@@ -1,0 +1,194 @@
+//messages SECTION SKELETON
+.messages.skeleton {
+  max-height: 600px;
+  .message {
+    .profile-photo {
+      animation: skeleton 1s linear infinite alternate;
+    }
+    .message-body > * {
+      height: 10px;
+      width: 130px;
+      background-color: var(--color-light);
+      margin-top: 10px;
+      border-radius: 10px;
+      animation: skeleton 1s linear infinite alternate;
+    }
+    .message-body {
+      p {
+        width: 100px;
+      }
+    }
+    &:hover {
+      background-color: transparent;
+    }
+  }
+}
+@keyframes skeleton {
+  0% {
+    filter: brightness(85%);
+  }
+  100% {
+    background-color: var(--color-light);
+  }
+}
+
+// SEARCH SKELETON ----------------
+ul.search-list.loading {
+  .item {
+    &:hover {
+      background-color: transparent;
+      cursor: default;
+    }
+  }
+  .info > * {
+    height: 10px;
+    width: 170px;
+    background-color: var(--color-light);
+    margin-top: 10px;
+    border-radius: 10px;
+    animation: skeleton 1s linear infinite alternate;
+  }
+  .caption {
+    width: 100px;
+  }
+}
+@keyframes skeleton {
+  0% {
+    filter: brightness(85%);
+  }
+  100% {
+    background-color: var(--color-light);
+  }
+}
+
+// POST SKELETON ----------------
+
+.post-loader {
+  position: relative;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.feed.loading {
+  min-height: 350px;
+  position: relative;
+
+  .ingo > * {
+    height: 10px;
+    width: 170px;
+    background-color: var(--color-light);
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+  .ingo > *,
+  .profile-photo {
+    animation: skeleton 1s linear infinite alternate;
+  }
+  .caption {
+    width: 100px;
+  }
+}
+@keyframes skeleton {
+  0% {
+    filter: brightness(85%);
+  }
+  100% {
+    background-color: var(--color-light);
+  }
+}
+
+// chat-box-popup skeleton
+.chat-box-popup.skeleton {
+  .image-container {
+    animation: skeleton 1s linear infinite alternate;
+  }
+  .message {
+    height: 40px;
+    width: 130px;
+    background-color: var(--color-light);
+    margin-top: 10px;
+    border-radius: 15px;
+    animation: skeleton 1s linear infinite alternate;
+  }
+  .message-body {
+    p {
+      width: 100px;
+    }
+  }
+}
+@keyframes skeleton {
+  0% {
+    filter: brightness(85%);
+  }
+  100% {
+    background-color: var(--color-light);
+  }
+}
+
+.skeleton {
+  .image {
+    animation: skeleton 1s linear infinite alternate;
+  }
+  .title,
+  .desc {
+    height: 10px;
+    background-color: var(--color-light);
+    margin-top: 10px;
+    border-radius: 15px;
+    animation: skeleton 1s linear infinite alternate;
+  }
+  .title {
+    width: 130px;
+  }
+  .desc {
+    width: 100px;
+  }
+
+  .btns {
+    margin-left: 58px;
+  }
+  .btn {
+    background-color: var(--color-light);
+    padding: 11px 30px;
+    animation: skeleton 1s linear infinite alternate;
+  }
+
+  @keyframes skeleton {
+    0% {
+      filter: brightness(85%);
+    }
+    100% {
+      background-color: var(--color-light);
+    }
+  }
+  //   .message {
+  //    .profile-photo {
+  //      animation: skeleton 1s linear infinite alternate;
+  //    }
+  //    .message-body > * {
+  //      height: 10px;
+  //      width: 130px;
+  //      background-color: var(--color-light);
+  //      margin-top: 10px;
+  //      border-radius: 10px;
+  //      animation: skeleton 1s linear infinite alternate;
+  //    }
+  //    .message-body {
+  //      p {
+  //        width: 100px;
+  //      }
+  //    }
+  //    &:hover {
+  //      background-color: transparent;
+  //    }
+  //  }
+  // }
+  // @keyframes skeleton {
+  //  0% {
+  //    filter: brightness(85%);
+  //  }
+  //  100% {
+  //    background-color: var(--color-light);
+  //  }
+}
